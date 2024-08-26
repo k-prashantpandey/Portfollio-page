@@ -1,0 +1,140 @@
+#project{
+    min-height: calc(100vw);
+    overflow: hidden;
+    width: 100vw;
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.projectTitle{
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 3rem;
+    margin-bottom: 1rem;
+    color: #1586e9;
+}
+
+.projectDesc{
+    font-weight: 400;
+    font-size: 1rem;
+    max-width: 50rem;
+    padding: 0 2rem;
+    color: rgb(180, 129, 62);
+}
+
+.project-item{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    max-width: 23rem;
+    position: relative;
+    background: white;
+    overflow: hidden;
+    margin: 1.5rem;
+    border-radius: 12px;
+    border: 1px;
+}
+
+.item-details{
+    padding: 0rem, 0rem, 0rem;
+    width: 100%;
+    height: 25%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background: #14131a;
+    border: 0.5px;
+    z-index: 1;
+}
+
+.projectImg{
+    object-fit: cover;
+    height: 20rem;
+    margin: auto;
+    width: 100%;
+    max-width: 50rem;
+    border: 1px;
+    z-index: -1;
+    border-radius: 12px;
+}
+
+.item-details .p1{
+    text-align: center;
+    margin: 0.5rem 0.5rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.8px;
+    color: #0af871;
+}
+
+.item-details .p2{
+    text-align: center;
+    color: rgba(175, 168, 168, 0.966);
+    margin-left: 0.8rem;
+    font-size: 1rem;
+    letter-spacing: 0.4px;
+    line-height: 0rem;
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.project-item:hover{
+    transition: all 0.2s;
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 720px) {
+    .item-details .p1{
+        font-size: 3.3vw;
+    }
+    .item-details .p2{
+        font-size: 2.2vw;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .item-details .p1{
+        font-size: 4vw;
+    }
+    .item-details .p2{
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width: 430) {
+    .projectTitle{
+        font-size: 11vw;
+    }
+
+    .item-details .p1{
+        font-size: 4vw;
+    }
+    .item-details .p2{
+        font-size: 5vw;
+    }
+}
+
+@media screen and (max-width: 398px) {
+    .project-item{
+        width: 75vw;
+    }
+    .projectImg{
+        width: 75vw;
+        height: 30vw;
+    }
+    .item-details .p1{
+        font-size: 3.5vw;
+    }
+    .item-details .p2{
+        font-size: 5.5;
+    }
+}
