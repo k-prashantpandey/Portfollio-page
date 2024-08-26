@@ -1,0 +1,109 @@
+#intro{
+    height: calc(100vh -  5rem);
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.logo2{
+   position: absolute;
+   top: -4rem;
+   right: 6rem;
+   z-index: -1;
+   object-fit: cover;
+   height: 20em;
+   padding: 1.5rem;
+   margin-top: 12rem;
+}
+@media(prefers-reduced-motion: no-preference){
+    .logo2{
+    animation: logo2-spin infinite 20s linear;
+    }
+}
+
+@keyframes logo2-spin{
+    from{
+        transform: rotate(360deg);
+    }
+}
+
+.introContent{
+    height: 100vh;
+    width: 100vw;
+    padding: 2rem;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hello{
+    color: bisque;
+    font-weight: 300;
+    font-size: 1.75rem;
+}
+
+.introName{
+    color: rgb(237, 11, 184);
+}
+
+.introtext{
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.introPara{
+    font-size: medium;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.btn2{
+    background: rgb(181, 159, 159);
+    margin: 1rem 0;
+    padding: 0.65rem 1.5rem;
+    border: none;
+    border-radius: 2rem;
+    font-weight: bolder;
+}
+
+.btn2:hover{
+    background-color: rgb(240, 178, 91);
+}
+
+.btnImg2{
+    object-fit: cover;
+    margin: 0 0.25rem;
+    height: 1rem;
+}
+
+@media screen and (max-width: 840px){
+    .logo2{
+        height: 17rem;
+        opacity: 0.3;
+    }
+    .introContent{
+        font-size: 10vw;
+    }
+    .hello{
+        font-size: 4.5vw;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .logo2{
+        right: 10vw;
+        height: 15em;
+        margin-top: 7rem;
+    }
+}
+
+@media screen and (max-width: 340px){
+    .logo2{
+        right: 10vw;
+        height: 12em;
+        margin-top: 8rem;
+    }
+}
