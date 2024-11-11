@@ -27,7 +27,7 @@
     height: 3em;
     width: 3rem;
  }
- @media(prefers-reduced-motion: no-preference){
+ /* @media(prefers-reduced-motion: no-preference){
      .logo{
      animation: logo-spin infinite 0.2s linear;
      }
@@ -37,7 +37,7 @@
      from{
          transform: rotate(360deg);
      }
- }
+ } */
 
 .nav-links-item{
     margin: 1rem;
